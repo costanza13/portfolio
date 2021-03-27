@@ -1,0 +1,16 @@
+:root {
+  --highlight: #92cbce;
+  --text-color-big: #445876;
+  --text-color-normal: #445876;
+  --background-color-primary: #edeef6;
+  --font-headings: ;
+  --font-normal: ;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Arial Narrow', Arial, sans-serif;
+}
