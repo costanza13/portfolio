@@ -7,36 +7,77 @@
   <title>Michael C Costanza's Web Developer Portfolio</title>
 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Cairo&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <p>
-      Top o' the page!
-    </p>
+    <h1>
+      Michael Costanza
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact-info">Contact Me</a></li>
+        <li><a href="#">Resumé</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section class="hero">
-      <p>
-        "Nothing to see here... yet."
-      </p>
+      <img src="assets/images/mcc-20200827.jpeg" alt="Michael Costanza" />
+      <h2>
+        &nbsp;
+      </h2>
     </section>
-    <section id="about-me">
+    <article id="about-me">
+      <h2>About Me</h2>
       <p>
-        But enough about me...
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ipsa incidunt cumque ratione facilis
+        voluptatibus. Facilis suscipit mollitia, dolor reiciendis dignissimos minima quia velit, labore nostrum, odio
+        assumenda laborum possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ipsa incidunt
+        cumque ratione facilis voluptatibus. Facilis suscipit mollitia, dolor reiciendis dignissimos minima quia velit,
+        labore nostrum, odio assumenda laborum possimus.
       </p>
-    </section>
-    <section id="work">
-      <p>
-        Where all the good stuff goes.
-      </p>
-    </section>
+    </article>
+    <article id="work">
+      <h2>Work</h2>
+      <div id="projects">
+        <div id="project1" class="project">
+          <a href="https://www.techdirt.com">
+            <div class="project-label">
+              <h3>Techdirt.</h3>
+              <p>LAMP Stack w/ JQuery, Responsive CSS</p>
+            </div>
+          </a>
+        </div>
+        <div id="project2" class="project">project 3</div>
+        <div id="project3" class="project">project 4</div>
+        <div id="project4" class="project">project 5</div>
+        <div id="project5" class="project">
+          <a href="#">
+            <div class="project-label">
+              <h3>Run Buddy.</h3>
+              <p>HTML / CSS</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article id="contact-info">
+      <h2>Contact Me</h2>
+      <ul>
+        <li><a href="tel:6467702622">646.770.2MCC</a></li>
+        <li><a href="mailto:costanza@gmail.com">costanza@gmail.com</a></li>
+        <li><a href="https://github.com/costanza13">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/costanza/">LinkedIn</a></li>
+      </ul>
+    </article>
   </main>
   <footer>
     <p>
-      Probably empty, but something to round out the design.
-    </p>
-    <p>
-      Also, a Good Place to Test out Fonts and Magic!
+      Open to interesting opportunities.
     </p>
   </footer>
 </body>

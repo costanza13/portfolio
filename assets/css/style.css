@@ -1,16 +1,247 @@
 :root {
-  --highlight: #92cbce;
+  --highlight: #bfe5f2;
   --text-color-big: #445876;
   --text-color-normal: #445876;
-  --background-color-primary: #edeef6;
-  --font-headings: ;
-  --font-normal: ;
+  --bgcolor-light: #edeef6;
+  --bgcolor-dark: #445876;
+  --font-headings: 'Averia Serif Libre', cursive;
+  --font-normal: 'Cairo', sans-serif;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Arial Narrow', Arial, sans-serif;
+  font-family: var(--font-normal);
+  background-color: var(--background-color-light);
+  color: var(--text-color-normal);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--bgcolor-dark);
+  color: var(--highlight);
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header h1 {
+  flex-basis: 100%;
+  padding: 10px;
+  text-align: center;
+  font-family: var(--font-headings);
+  font-size: 40px;
+}
+
+nav {
+  flex-basis: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul li {
+  flex: 1 content;
+  width: 100%;
+  font-family: var(--font-headings);
+  font-size: 24px;
+  text-align: center;
+}
+
+nav ul li a {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 800px;  /* until we get some content in there */
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: right;
+  min-height: 300px;
+  background-image: url('../images/truckee-bluegray.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  border-color: var(--bgcolor-dark);
+  padding: 30px 10%;
+}
+
+.hero img {
+  border: 4px solid var(--bgcolor-dark);
+  border-radius: 16px;
+  max-width: 200px;
+}
+
+.hero h2 {
+  font-size: 170%;
+  font-weight: 700;
+  padding: 20px;
+  color: var(--bgcolor-light);
+  text-align: right;
+  text-shadow: 1px 2px var(--bgcolor-dark);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: top;
+  padding: 20px;
+}
+
+article h2 {
+  border-right: 1px solid var(--bgcolor-dark);
+  flex-basis: 20%;
+  font-family: var(--font-headings);
+  font-size: 42px;
+  padding: 20px;
+  text-align: right;
+}
+
+article p, #contact-info ul {
+  flex-basis: 70%;
+  padding: 20px;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+  justify-content: space-between;
+}
+
+.project {
+  display: flex;
+  justify-content: stretch;
+  align-items: flex-end;
+  background: #eee;
+  border: 4px solid var(--bgcolor-dark);
+  border-radius: 16px;
+  flex: 1 40%;
+  height: 200px;
+  margin: 5px;
+}
+
+#project1 {
+  flex: 1 100%;
+  background-image: url('../images/techdirt-ss.png');
+  background-size: cover;
+  height: 400px;
+}
+
+#project5 {
+  background-image: url('../images/runbuddy-ss.png');
+  background-size: cover;
+}
+
+.project a {
+  color: var(--text-color-normal);
+  text-decoration: none;
+  width: 100%;
+}
+
+.project-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--highlight);
+  opacity: 0.95;
+  border-radius: 0 0 12px 12px;
+  padding: 5px 10px;
+}
+
+.project-label h3 {
+  flex: 1 50%;
+  font-size: 150%;
+  padding: 0;
+}
+
+.project-label p {
+  flex: 1 50%;
+  font-size: 100%;
+  padding: 0;
+  text-align: right;
+}
+
+#contact-info ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#contact-info ul li {
+  border-bottom: 1px solid var(--text-color-normal);
+  font-size: 24px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+#contact-info ul li a {
+  color: var(--text-color-normal);
+  text-decoration: none;
+}
+
+
+footer {
+  display: block;
+  min-height: 40px;  /* until we get some content in there */
+  background-color: var(--bgcolor-dark);
+  padding: 10px 20px;
+}
+
+footer p {
+  color: var(--bgcolor-light);
+  font-family: var(--font-headings);
+  font-style: italic;
+  padding: 20px;
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  header h1 {
+    flex-basis: 50%;
+    text-align: left;
+  }
+
+  nav {
+    flex-basis: 70%;
+  }
+  
+  article {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header h1 {
+    flex-basis: 40%;
+    text-align: right;
+    align-self: flex-start;
+  }
+
+  nav {
+    flex-basis: 50%;
+    align-self: flex-end;
+  }
+  
 }
