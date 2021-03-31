@@ -170,7 +170,7 @@ article p, #contact-info ul {
   justify-content: space-between;
   align-items: center;
   background: var(--highlight);
-  opacity: 0.95;
+  opacity: 0.98;
   border-radius: 0 0 12px 12px;
   padding: 5px 10px;
 }
