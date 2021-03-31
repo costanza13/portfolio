@@ -27,7 +27,6 @@ header {
   flex-wrap: wrap;
   background-color: var(--bgcolor-dark);
   color: var(--highlight);
-  padding: 5px;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -46,6 +45,7 @@ nav {
   flex-basis: 100%;
   width: 100%;
   align-items: flex-end;
+  margin-bottom: 10px;
 }
 
 nav ul {
@@ -62,7 +62,7 @@ nav ul li {
   border-radius: 16px;
   width: 100%;
   font-family: var(--font-headings);
-  font-size: 3.5vw;
+  font-size: calc(12px + 1vw);
   padding: 0 1vw;
   margin: 0 1vw;
   text-align: center;
@@ -231,6 +231,28 @@ footer p {
     margin: 0 auto;
   }
 
+  nav {
+    flex: 2 100%;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    flex-basis: 70%;
+    margin-bottom: 5px;
+  }
+  
+  nav ul li {
+    border: none;
+    flex: 1 100%;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+  }
+
+  article {
+    flex-direction: row;
+  }
+
   article h2 {
     border-bottom: none;
     border-right: 1px solid var(--bgcolor-dark);
@@ -242,36 +264,20 @@ footer p {
   header h1 {
     flex: 1 40%;
     text-align: left;
-  }
-
-  nav {
-    flex: 2 100%;
-    justify-content: flex-end;
-  }
-
-  nav ul {
-    flex-basis: 70%;
-    margin-bottom: 10px;
-  }
-  
-  nav ul li {
-    border: none;
-    flex: 1 100%;
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
-  }
-
-  article {
-    flex-direction: row;
+    padding-left: 40px;
   }
 }
 
 @media screen and (min-width: 1000px) {
+  header {
+    align-items: flex-end;
+  }
+
   header h1 {
     flex: 1 40%;
     text-align: center;
     align-self: flex-start;
+    padding-left: 10px;
   }
 
   nav {
