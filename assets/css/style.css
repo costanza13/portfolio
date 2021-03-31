@@ -19,7 +19,7 @@ body {
   background-color: var(--background-color-light);
   color: var(--text-color-normal);
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 header {
@@ -42,7 +42,10 @@ header h1 {
 }
 
 nav {
+  display: flex;
   flex-basis: 100%;
+  width: 100%;
+  align-items: flex-end;
 }
 
 nav ul {
@@ -54,10 +57,14 @@ nav ul {
 }
 
 nav ul li {
-  flex: 1 content;
+  flex: 1 auto;
+  border: 1px solid var(--highlight);
+  border-radius: 16px;
   width: 100%;
   font-family: var(--font-headings);
-  font-size: 24px;
+  font-size: 3.5vw;
+  padding: 0 1vw;
+  margin: 0 1vw;
   text-align: center;
 }
 
@@ -76,10 +83,10 @@ main {
 .hero {
   text-align: right;
   min-height: 300px;
-  background-image: url('../images/truckee-bluegray.jpeg');
-  background-size: cover;
+  background-image: url('../images/truckee-rocks.jpeg');
+  background-size: auto;
   background-attachment: fixed;
-  background-position: top;
+  background-position: center -250px;
   border-color: var(--bgcolor-dark);
   padding: 30px 10%;
 }
@@ -108,12 +115,12 @@ article {
 }
 
 article h2 {
-  border-right: 1px solid var(--bgcolor-dark);
-  flex-basis: 20%;
+  border-bottom: 1px solid var(--bgcolor-dark);
+  flex-basis: 100%;
   font-family: var(--font-headings);
   font-size: 42px;
   padding: 20px;
-  text-align: right;
+  text-align: center;
 }
 
 article p, #contact-info ul {
@@ -183,6 +190,7 @@ article p, #contact-info ul {
 
 #contact-info ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: space-around;
   align-items: flex-start;
@@ -190,10 +198,11 @@ article p, #contact-info ul {
 }
 
 #contact-info ul li {
-  border-bottom: 1px solid var(--text-color-normal);
-  font-size: 24px;
+  font-size: 22px;
+  margin: 0 5px;
   padding: 0 10px;
   text-align: center;
+  flex-basis: 40%
 }
 
 #contact-info ul li a {
@@ -218,15 +227,41 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    margin: 0 auto;
+  }
+
+  article h2 {
+    border-bottom: none;
+    border-right: 1px solid var(--bgcolor-dark);
+    flex-basis: 20%;
+    font-size: 42px;
+    text-align: center;
+  }
+
   header h1 {
-    flex-basis: 50%;
+    flex: 1 40%;
     text-align: left;
   }
 
   nav {
+    flex: 2 100%;
+    justify-content: flex-end;
+  }
+
+  nav ul {
     flex-basis: 70%;
+    margin-bottom: 10px;
   }
   
+  nav ul li {
+    border: none;
+    flex: 1 100%;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
   article {
     flex-direction: row;
   }
@@ -234,14 +269,24 @@ footer p {
 
 @media screen and (min-width: 1000px) {
   header h1 {
-    flex-basis: 40%;
-    text-align: right;
+    flex: 1 40%;
+    text-align: center;
     align-self: flex-start;
   }
 
   nav {
-    flex-basis: 50%;
-    align-self: flex-end;
+    flex: 2 50%;
+    align-content: flex-end;
+    width: 100%
   }
-  
+
+  nav ul {
+    flex-basis: 100%;
+    margin: 0;
+  }
+
+  #contact-info ul li {
+    border-bottom: 1px solid var(--text-color-normal);
+    flex-basis: auto;
+  }
 }
