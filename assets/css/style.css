@@ -305,6 +305,10 @@ footer p {
     margin: 0;
   }
 
+  article h2 {
+    font-size: 38px;
+  }
+
   #contact-info ul li {
     border-bottom: 1px solid var(--text-color-normal);
     flex-basis: auto;
