@@ -26,6 +26,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--bgcolor-dark);
+  border-radius: 20px 20px 0 0;
   color: var(--highlight);
   justify-content: space-between;
   align-items: center;
@@ -226,6 +227,7 @@ footer {
   display: block;
   min-height: 40px;  /* until we get some content in there */
   background-color: var(--bgcolor-dark);
+  border-radius: 0 0 20px 20px;
   padding: 10px 20px;
 }
 

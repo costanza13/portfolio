@@ -40,3 +40,11 @@ THEN I am presented with a responsive layout that adapts to my viewport
 - CSS3
 - Flexbox
 - @Media queries
+
+
+## Screenshots
+
+<img src="./assets/images/screenshot-desktop.png" alt="desktop" width="65%" /> <img src="./assets/images/screenshot-mobile.png" alt="mobile" width="26%">
+
+
+https://costanza13.github.io/portfolio/
