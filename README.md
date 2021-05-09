@@ -1,6 +1,8 @@
 # Portfolio
 A professional portfolio page to spotlight my work as a full stack web developer for potential employers. The page is designed to meet the critera listed below...
 
+- Check it out, here: https://costanza13.github.io/portfolio/
+
 ## User Story
 
 ```
@@ -45,6 +47,3 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ## Screenshots
 
 <img src="./assets/images/screenshot-desktop.png" alt="desktop" width="65%" /> <img src="./assets/images/screenshot-mobile.png" alt="mobile" width="26%">
-
-
-https://costanza13.github.io/portfolio/
