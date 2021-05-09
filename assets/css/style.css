@@ -170,6 +170,10 @@ article p, #contact-info ul {
   background-image: url('../images/projects/sig-desktop.png');
 }
 
+#project4 {
+  background-image: url('../images/projects/work-day-scheduler.png');
+}
+
 #project5 {
   background-image: url('../images/projects/runbuddy-ss.png');
 }
@@ -187,7 +191,7 @@ article p, #contact-info ul {
 }
 
 .project-label h3 {
-  flex: 1 40%;
+  flex: 1 60%;
   font-size: 150%;
   line-height: 1.5;
   padding: 0;
@@ -196,7 +200,7 @@ article p, #contact-info ul {
 }
 
 .project-label p {
-  flex: 2 60%;
+  flex: 2 40%;
   font-size: 80%;
   line-height: 1.2;
   padding: 0;
