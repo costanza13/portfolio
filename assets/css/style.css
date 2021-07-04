@@ -167,11 +167,15 @@ article p, #contact-info ul {
 }
 
 #project2 {
+  background-image: url('../images/projects/cool-california.png');
+}
+
+#project3 {
   background-image: url('../images/projects/sig-desktop.png');
 }
 
 #project4 {
-  background-image: url('../images/projects/work-day-scheduler.png');
+  background-image: url('../images/projects/work-day-scheduler.jpg');
 }
 
 #project5 {
@@ -180,7 +184,7 @@ article p, #contact-info ul {
 
 .project-label {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   background: var(--highlight);
